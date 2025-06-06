@@ -1,0 +1,15 @@
+{
+  "name": "@mat4/monorepo",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach run build",
+    "dev": "yarn workspaces foreach run dev",
+    "lint": "yarn workspaces foreach run lint",
+    "test": "yarn workspaces foreach run test"
+  }
+}

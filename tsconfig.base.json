@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@packages/*": ["packages/*/src"],
+      "@apps/*": ["apps/*/src"],
+     "@mat4/theme": ["packages/theme/build/js"],
+     "@mat4/react": ["packages/react/src"],
+      "@mat4/react/components": ["packages/react/src/components"],
+      "@mat4/react/components/*": ["packages/react/src/components/*"],
+      "@mat4/react/icons": ["packages/react/src/icons.tsx"]  
+
+
+    }
+  }
+}

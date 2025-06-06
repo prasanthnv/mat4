@@ -1,0 +1,24 @@
+{
+  "name": "@mat4/theme",
+  "packageManager": "yarn@4.6.0",
+  "version": "0.1.0",
+  "main": "build/js/tokens.js",
+  "types": "build/js/tokens.d.ts",
+  "devDependencies": {
+    "style-dictionary": "^5.0.0",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build:sd": "style-dictionary build --verbose",
+    "build:ts": "tsc --project tsconfig.json",
+    "build": "yarn build:sd",
+    "init": "style-dictionary init --config config.json --source tokens --platforms css,js"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/js/theme.js",
+      "require": "./build/js/theme.js",
+      "types": "./build/js/theme.d.ts"
+    }
+  }
+}

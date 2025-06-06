@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@mat4/react/*": ["src/*"],
+      "@mat4/theme/*": ["../theme/build/*"],
+      
+    },
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}

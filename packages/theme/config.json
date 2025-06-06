@@ -1,0 +1,50 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "ts": {
+      "transformGroup": "js",
+      "files": [
+        {
+          "format": "javascript/es6",
+          "destination": "build/js/theme.js"
+        },
+        {
+          "format": "typescript/es6-declarations",
+          "destination": "build/js/theme.d.ts"
+        }
+      ]
+    },
+    "css": {
+      "transformGroup": "css",
+      "files": [
+        {
+          "format": "css/variables",
+          "destination": "build/css/theme.css"
+        },
+        {
+          "format": "css/variables",
+          "destination": "build/css/theme.min.css",
+          "options": {
+            "minify": true
+          }
+        }
+      ]
+    },
+    "scss":{
+      "transformGroup": "css",
+      "files": [
+        {
+          "format": "scss/variables",
+          "destination": "build/scss/theme.scss"
+        },
+        {
+          "format": "scss/variables",
+          "destination": "build/scss/theme.min.scss",
+          "options": {
+            "minify": true
+          }
+        }
+      ]
+    }
+  }
+}
