@@ -11,13 +11,15 @@
     "paths": {
       "@packages/*": ["packages/*/src"],
       "@apps/*": ["apps/*/src"],
-     "@mat4/theme": ["packages/theme/build/js"],
-     "@mat4/react": ["packages/react/src"],
+      "@mat4/theme": ["packages/theme/build/js"],
+      "@mat4/react": ["packages/react/src"],
       "@mat4/react/components": ["packages/react/src/components"],
       "@mat4/react/components/*": ["packages/react/src/components/*"],
-      "@mat4/react/icons": ["packages/react/src/icons.tsx"]  
-
-
+      "@mat4/react/icons": ["packages/react/src/icons.tsx"],
+      "@mat4/vue": ["packages/vue/src"],
+      "@mat4/vue/components": ["packages/vue/src/components"],
+      "@mat4/vue/components/*": ["packages/vue/src/components/*"],
+      "@mat4/vue/icons": ["packages/vue/src/icons.ts"]
     }
   }
 }
